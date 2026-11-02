@@ -1,0 +1,22 @@
+{
+  "buckets": {},
+  "services": {
+    "8d4605f2-825f-496f-9fe1-a51c97d12c5f": {
+      "icon": "https://raw.githubusercontent.com/11ty/buildawesome/main/docs/ba-11ty-logo.png",
+      "name": "Website",
+      "build": { "dockerfilePath": "Dockerfile" },
+      "deploy": {
+        "startCommand": null,
+        "healthcheckPath": "/",
+        "restartPolicyType": "ON_FAILURE",
+        "restartPolicyMaxRetries": 10
+      },
+      "source": { "repo": "https://github.com/two-workspaces/build-awesome", "rootDirectory": "/" },
+      "variables": {
+        "PORT": { "defaultValue": "8080", "description": "Port the site is served on - leave as is", "isOptional": false }
+      },
+      "networking": { "serviceDomains": { "<hasDomain>": {} } },
+      "volumeMounts": {}
+    }
+  }
+}

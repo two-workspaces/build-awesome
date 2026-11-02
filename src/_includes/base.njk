@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header><a href="/">My Site</a> <a href="/about/">About</a></header>
+  <main>
+    <h1>{{ title }}</h1>
+    {% if date and tags %}<p class="date">{{ date | date }}</p>{% endif %}
+    {{ content | safe }}
+  </main>
+</body>
+</html>

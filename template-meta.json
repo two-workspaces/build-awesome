@@ -1,0 +1,8 @@
+{
+  "name": "Build Awesome | Eleventy (11ty) Static Site Starter",
+  "short_name": "Build Awesome",
+  "description": "Eleventy blog starter: write Markdown, push to GitHub, and the site rebuilds",
+  "category": "Starters",
+  "image": "https://raw.githubusercontent.com/11ty/buildawesome/main/docs/ba-11ty-logo.png",
+  "card_desc": "A small Build Awesome (Eleventy) site with pages and a blog, built at deploy and served by Caddy. Write Markdown, push, and it goes live."
+}

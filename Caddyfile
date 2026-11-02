@@ -1,0 +1,14 @@
+{
+	admin off
+	auto_https off
+}
+
+:{$PORT:8080} {
+	root * /srv
+	encode zstd gzip
+	file_server
+	handle_errors {
+		rewrite * /{err.status_code}.html
+		file_server
+	}
+}
